@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 648 432">
+  <style>
+<![CDATA[
+	.st0{fill:#AED8A6;}
+	.st1{fill:#5D5E5E;}
+	.st2{fill:#646565;}
+	.st3{fill:#6B9968;}
+	.st4{fill:#6BC060;}
+]]>
+  </style>
+  <path d="M216 360h72v72h-72zm0-144h72v72h-72z" class="st0"/>
+  <path d="M144 360h72v72h-72zm0-144h72v72h-72z" class="st3"/>
+  <path d="M0 288h72v72H0z" class="st1"/>
+  <path d="M72 360h72v72H72zm0-144h72v72H72z" class="st2"/>
+  <path d="M576 72h72v72h-72zm-216 0h216V0H288v432h72V216h216v-72H360z" class="st4"/>
+</svg>
