@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
   <g fill="none" fill-rule="evenodd">
-    <path fill="#6C986A" d="M150 200h-50v-50h50v50zm0 100h-50v-50h50v50z"/>
-    <path fill="#AFD7A8" d="M200 200h-50v-50h50v50zm0 100h-50v-50h50v50z"/>
-    <path fill="#5D5E5E" d="M50 250H0v-50h50v50zm50-50H50v-50h50v50zm0 100H50v-50h50v50z"/>
-    <path fill="#72BC78" d="M400 100h50V50h-50zm-50-50V0h50v50h-50zm0 100v-50h50v50h-50zM300 50V0h50v50h-50zm-50 0V0h50v50h-50zm50 100v-50h50v50h-50zm-50 0v-50h50v50h-50zm0 150h-50V0h50v300z"/>
+    <path fill="#5B8121" d="M150 200h-50v-50h50v50zm0 100h-50v-50h50v50z"/>
+    <path fill="#81B532" d="M200 200h-50v-50h50v50zm0 100h-50v-50h50v50z"/>
+    <path fill="#595859" d="M50 250H0v-50h50v50zm50-50H50v-50h50v50zm0 100H50v-50h50v50z"/>
+    <path fill="#95D13C" d="M400 100h50V50h-50zm-50-50V0h50v50h-50zm0 100v-50h50v50h-50zM300 50V0h50v50h-50zm-50 0V0h50v50h-50zm50 100v-50h50v50h-50zm-50 0v-50h50v50h-50zm0 150h-50V0h50v300z"/>
   </g>
 </svg>
