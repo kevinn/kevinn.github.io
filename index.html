@@ -10,7 +10,7 @@
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <style type="text/css" media="screen">
     body { margin: 0; padding: 30px; font-size: 14px; font-family: 'Inconsolata', monospace; font-display: swap; color: #eee; background: #232D22; text-align: center; } h1, h2, h3 { margin: 0 0 1em; padding: 0; font-size: 2em; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; } h1 { margin-bottom: 2em; } h2 { font-size: 1.5em; } h3 { font-size:  1em; } .logo { display: block; margin: 0 auto 15px; width: 64px; height: 64px; } .splash { position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: 1.33em solid #efefef; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url(images/bg.jpg) 0 0 repeat; background-size: contain; } .icons, .contact {display: -ms-inline-flexbox; display: inline-flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; margin: 0 0.5em; width: 25px; height: 25px; } .icons svg, .contact svg { display: inline-block; width: auto; height: 25px; fill: #eee; } .icons:hover svg, .contact:hover svg { fill: #95D13C; } .green { color: #95D13C; } .lildiv { padding: 1em 0; } @media screen and (max-height: 600px), (max-width: 600px) { .splash { display: block; padding: 3em; overflow: auto; border-color: #444; } }
-    a, a:visited, a:active { color: #95D13C; } dt { display: block; margin: 0; } dd { display: block; margin: 0; line-height: 1.8; }
+    a, a:visited, a:active { color: #95D13C; } .recent { margin: 0 auto; padding: 0 16px; max-width: 75%; text-align: left; } .recent p { margin: 0 0 8px; line-height: 1.8; }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <meta name="google-site-verification" content="ZqKoZOTyPpk6Lz2NzIFlSdQtgOa6Tj63OD9bpPiJaHs" />
@@ -19,7 +19,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-132911470-1');
   </script>
 </head>
@@ -35,14 +34,10 @@
     <br>
 
     <h3 class="green">Recent</h3>
-    <dl style="max-width: 460px;">
-      <dt><a href="https://www.pixelpush.io/durbee">Durbee</a></dt>
-      <dd>A small excercise app using Vue.js using Darebee foundation workouts.</dd>
-    </dl>
-    <dl style="max-width: 460px;">
-      <dt><a href="https://elintseeker.github.io/re2-remake-checklist/">https://elintseeker.github.io/re2-remake-checklist/</a></dt>
-      <dd>A Javascript-based and PWA enabled checklist for the Resident Evil 2 game</dd>
-    </dl>
+    <div class="recent">
+      <p><a href="https://www.pixelpush.io/durbee">Durbee</a> - A small excercise app using Vue.js using Darebee foundation workouts.</p>
+      <p><a href="https://elintseeker.github.io/re2-remake-checklist/">RE2 Remake Checklist</a> - A Javascript/PWA enabled checklist for the Resident Evil 2 game.</p>
+    </div>
 
 
     <div class="lildiv somethingtosee">
