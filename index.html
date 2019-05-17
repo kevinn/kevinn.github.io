@@ -9,8 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <style type="text/css" media="screen">
-    body { margin: 0; padding: 30px; font-size: 14px; font-family: 'Inconsolata', monospace; font-display: swap; color: #eee; background: #232D22; text-align: center; } h1, h2, h3 { margin: 0 0 1em; padding: 0; font-size: 2em; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; } h1 { margin-bottom: 2em; } h2 { font-size: 1.5em; } h3 { font-size:  1em; } .logo { display: block; margin: 0 auto 15px; width: 64px; height: 64px; } .splash { position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: 1.33em solid #efefef; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url(images/bg.jpg) 0 0 repeat; background-size: contain; } .icons, .contact {display: -ms-inline-flexbox; display: inline-flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; margin: 0 0.5em; width: 25px; height: 25px; } .icons svg, .contact svg { display: inline-block; width: auto; height: 25px; fill: #eee; } .icons:hover svg, .contact:hover svg { fill: #95D13C; } .green { color: #95D13C; } .lildiv { padding: 1em 0; } @media screen and (max-height: 600px), (max-width: 600px) { .splash { display: block; padding: 3em; overflow: auto; border-color: #444; } }
-    a, a:visited, a:active { color: #95D13C; } .recent { margin: 0 auto; padding: 0 16px; max-width: 75%; text-align: left; } .recent p { margin: 0 0 8px; line-height: 1.8; }
+    body { margin: 0; padding: 0; font-size: 14px; font-family: 'Inconsolata', monospace; font-display: swap; color: #eee; background: #232D22; text-align: center; } h1, h2, h3 { margin: 0 0 1em; padding: 0; font-size: 2em; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; } h1 { margin-bottom: 2em; } h2 { font-size: 1.5em; } h3 { font-size:  1em; } .logo { display: block; margin: 0 auto 15px; width: 64px; height: 64px; } .splash { position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: stretch; background: url(images/bg.jpg) 0 0 repeat; background-size: contain; border: 16px solid #efefef; } .icons, .contact { display: inline-flex; align-items: center; justify-content: center; margin: 0 0.5em; width: 25px; height: 25px; }
+    .icons svg, .contact svg { display: inline-block; width: auto; height: 25px; fill: #eee; } .icons:hover svg, .contact:hover svg { fill: #95D13C; } .green { color: #95D13C; } .lildiv { padding: 1em 0; }
+    .splash > div { flex: 1; display: flex; align-items: center; justify-content: center; padding: 32px; } .sidebar { margin: 0 auto; max-width: 320px; background-color: rgba(0,0,0,0.3); } .recent { margin: 0 auto; padding: 16px; } .recent p { margin: 0 0 8px; line-height: 1.8; text-align: left; }
+    a, a:visited, a:active { color: #95D13C; }
+    @media screen and (max-width: 768px) { .splash { display: block; padding: 32px 0 0; overflow: auto; } .sidebar { margin-top: 32px; max-width: 100%; } }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <meta name="google-site-verification" content="ZqKoZOTyPpk6Lz2NzIFlSdQtgOa6Tj63OD9bpPiJaHs" />
@@ -26,123 +29,120 @@
 <body>
 <div class="splash">
   <div class="wc">
-    <img src="images/pixelpush.svg" class="logo" alt="pixelpush" />
+    <div>
 
-    <h1>pixelpush</h1>
+      <img src="images/pixelpush.svg" class="logo" alt="pixelpush" />
 
-    <h2>Kevin Navia</h2>
+      <h1>pixelpush</h1>
 
-    <br>
+      <h2>Kevin Navia</h2>
 
-    <h3 class="green">Recent</h3>
+      <div class="lildiv somethingtosee">
+        <h3 class="green">Something to see</h3>
+
+        <a href="https://dribbble.com/kevinn" class="icons" title="dribbbling...">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.3 82 47.8 132a495 495 0 0 0-147.5-6.9c-5.7-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zm-23.6-24.5c-3.8 5.4-35.7 48.3-111 76.5a1130.7 1130.7 0 0 0-79-124c67.1-16.2 138 1.3 190 47.5zM166 64.6c5.6 7.7 43.5 60.1 78.6 122.5-99.1 26.3-186.4 26-195.9 25.8A212.6 212.6 0 0 1 166 64.6zM44.2 256.3v-6.5c9.3.2 112 1.6 217.8-30.1 6 11.9 11.8 24 17.2 36C202.6 277.2 133 339.2 98.6 398a211 211 0 0 1-54.4-141.7zM126 423.4c22.1-45.2 82.2-103.6 167.6-132.7 29.7 77.3 42 142 45.1 160.6-68 29-150 21-212.7-27.9zm248.4 8.5a914.3 914.3 0 0 0-41.2-151 311 311 0 0 1 132 9 212.2 212.2 0 0 1-90.8 142z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.dropbox.com/sh/nv2zcs0burtrk27/AABJDoXWrNPYRkbPSoJbKXIMa" class="icons" title="Recent and not-so recent stuff, unposted...">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 512">
+            <path d="M264.4 116.3l-132 84.3 132 84.3-132 84.3L0 284.1l132.3-84.3L0 116.3 132.3 32l132.1 84.3zM131.6 395.7l132-84.3 132 84.3-132 84.3-132-84.3zm132.8-111.6l132-84.3-132-83.6L395.7 32 528 116.3l-132.3 84.3L528 284.8l-132.3 84.3-131.3-85z"/>
+          </svg>
+        </a>
+
+        <a href="https://codepen.io/kevinn/" class="icons" title="Codepen snippets and experiments">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+            <path d="M60 0a60 60 0 1 0 .2 120.1A60 60 0 0 0 60 0zm0 110.2a50.2 50.2 0 1 1 .3-100.5 50.2 50.2 0 0 1-.3 100.5z" class="outer-ring"/>
+            <path d="M97.1 48.3v-.1-.3-.1l-.2-.3v-.1l-.1-.2-.1-.2a2.9 2.9 0 0 0-.4-.5l-.2-.1-.1-.2h-.2V46l-34-22.6c-1-.7-2.5-.7-3.5 0l-34 22.6-.2.1-.1.2-.2.1-.1.2a3 3 0 0 0-.3.3v.1l-.2.2v.2l-.1.2v.2l-.1.2v24l.1.2.1.2.1.2.1.2h.1l.1.3.1.1.2.2.1.1.2.2h.1l.1.1 33.9 22.7a3.3 3.3 0 0 0 3.5 0l34-22.6.2-.1.2-.2v-.1a2.9 2.9 0 0 0 .5-.5v-.2l.2-.2v-.1l.1-.3.1-.1v-.3-.1l.1-.4V48.7l-.1-.4zM63.2 32.1l25 16.6-11.1 7.5L63.2 47V32zM57 32V47L43 56.2 32 48.7l25-16.6zM29.3 54.7l8 5.3-8 5.4V54.7zM56.9 88l-25-16.6L43 63.9 57 73.2V88zM60 67.6L48.8 60 60 52.5 71.3 60 60 67.6zM63.2 88V73.1L77.1 64l11.1 7.5-25 16.6zm27.6-22.6l-8-5.4 8-5.3v10.7z" class="inner-box"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/kevinn/" class="icons" title="Github profile">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-github fa-w-16 fa-7x" data-icon="github" data-prefix="fab" viewBox="0 0 496 512">
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252a250.7 250.7 0 0 0 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9a94.5 94.5 0 0 1 2.6-67.9c20.9-6.5 69 27 69 27a235 235 0 0 1 125.6 0s48.1-33.6 69-27a94.4 94.4 0 0 1 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="lildiv getintouch">
+        <h3 class="green">Get in touch</h3>
+
+        <script>
+        //<![CDATA[
+        <!--
+        var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+        "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+        " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+        "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+        "\"(6),4\\\"\\\\7{01\\\\\\\\05\\\\04\\\\02\\\\\\\\36\\\\05\\\\00\\\\\\\\30\\" +
+        "\\0e\\\\TPZC3@02\\\\\\\\\\\\\\\\\\\\\\\\0X02\\\\\\\\K[6j01\\\\\\\\7w02\\\\\\"+
+        "\\DLOS4Q00\\\\\\\\01\\\\0~\\\\NR}p>t'Gkjzv4vN1y~f!y~f{~mrm3@02\\\\\\\\22\\\\"+
+        "07\\\\01\\\\\\\\22\\\\06\\\\03\\\\\\\\6I03\\\\\\\\33\\\\01\\\\00\\\\\\\\02\\"+
+        "\\00\\\\01\\\\\\\\\\\\nG\\\\\\\\?\\\\\\\\9\\\\)8w1o4gs'#3,1,1602\\\\\\\\UI\\"+
+        "\\\\\\\\\\\\\\@Z^P\\\\K(\\\"}fo;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomf" +
+        "rg.intr=So+7;12%=;y++)y46i<f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\" +
+        "o=i,r va){,y(x fontincfu)\\\"\")"                                            ;
+        while(x=eval(x));
+        //-->
+        //]]>
+        </script>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M502.3 190.8a6 6 0 0 1 9.7 4.7V400a48 48 0 0 1-48 48H48a48 48 0 0 1-48-48V195.6a6 6 0 0 1 9.7-4.7c22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7A24 24 0 0 0 512 131v-19a48 48 0 0 0-48-48H48a48 48 0 0 0-48 48v19a24 24 0 0 0 9.2 18.9c30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kevinnavia/" class="icons" title="My LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M100 448H7V149h93v299zM54 108C24 108 0 84 0 54S24 0 54 0s54 24 54 54-25 54-54 54zm394 340h-93V302c0-34 0-79-48-79s-56 38-56 77v148h-92V149h89v41h1c12-24 43-49 88-49 94 0 111 62 111 143v164z"/>
+          </svg>
+        </a>
+
+        <a href="http://twitter.com/kevinn" class="icons" title="Say hello on Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M469 117l-30 10c11-11 20-25 25-40 1-4-4-8-8-6a175 175 0 0 1-49 20c-3 0-6-1-8-3a95 95 0 0 0-93-19 92 92 0 0 0-62 66c-3 12-3 23-2 35l-1 2a4 4 0 0 1-3 2c-67-7-128-39-171-92-2-2-6-2-8 1a95 95 0 0 0 16 115c-8-2-15-4-22-8-3-2-7 0-7 4-1 38 22 72 55 88a91 91 0 0 1-18-2c-4-1-7 3-6 6 11 34 40 59 75 65-29 20-62 30-98 30H43c-3 0-6 2-7 5 0 3 1 7 4 9a264 264 0 0 0 242 12 269 269 0 0 0 149-237v-2c0-5 2-10 6-13 15-12 28-25 38-41 3-4-2-9-6-7z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="lildiv play">
+
+        <h3 class="green">Play</h3>
+
+        <a href="https://my.playstation.com/mortari0nactual" class="icons" title="My PSN profile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 154.8">
+            <path d="M197.2 118a37 37 0 0 1-13.3 8.3l-70.5 25.3V133l51.9-18.5c5.9-2.1 6.8-5.1 2-6.7a35 35 0 0 0-19.3 1L113.4 121v-19.4l2-.7s10-3.5 24-5c14-1.6 31.3.2 44.8 5.3 15.2 4.8 16.9 11.9 13 16.8zm-77-31.8V38.4c0-5.6-1.1-10.8-6.4-12.2-4-1.3-6.5 2.4-6.5 8v119.6L75 143.6V1c13.8 2.5 33.7 8.6 44.5 12.2 27.3 9.4 36.5 21 36.5 47.3 0 25.7-15.8 35.4-35.9 25.7zM15.8 131C.2 126.6-2.4 117.5 4.8 112.2a76.5 76.5 0 0 1 17.7-8.6l46.3-16.4v18.7l-33.3 12c-5.9 2-6.8 5-2 6.6a35 35 0 0 0 19.3-1l16-5.8v16.8l-3.2.5c-16 2.6-33 1.5-49.7-4zm171 7.4c2 0 4 .8 5.4 2.3a7.5 7.5 0 0 1 0 10.6 7.5 7.5 0 0 1-10.7 0 7.6 7.6 0 0 1 5.3-12.9zm-6.2 7.6a6.2 6.2 0 0 0 6.3 6.3 6.3 6.3 0 1 0-6.3-6.3zm8.5-4c.9.3 1.3 1 1.3 2 0 .5-.1 1-.4 1.3l-.6.6.5.4c.2.2.3.6.3 1.1v1l.1.7c0 .2.2.3.3.4v.5h-1.6l-.1-.4v-.6l-.1-1.4c0-.4-.2-.7-.5-.9l-1-.1h-2.2v3.4h-1.5v-8.4h4c.6 0 1.1.1 1.5.3zm-4 3.3h2.3c.5 0 .9 0 1.1-.3.3-.1.4-.5.4-1 0-.4-.2-.8-.5-1h-3.3v2.3z" class="cls-2"/>
+          </svg>
+        </a>
+
+        <a href="https://steamcommunity.com/id/deim0s/" class="icons" title="Steam profile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233 233">
+            <path d="M.3 108.8A116.5 116.5 0 1 1 5 150.5l44.1 18.2a32.3 32.3 0 0 0 63.9-8l40.8-29h1a44.3 44.3 0 1 0-44.3-43.8L82 129.3a32 32 0 0 0-19.1 5.3L.3 108.8zm103.4 62.4a25 25 0 0 1-45.5 1.3l14.4 6a18.3 18.3 0 1 0 14.2-34l-15-6.2a24.8 24.8 0 0 1 31.9 13.8c2.5 6.2 2.5 13 0 19.1zm51-54.3a29.5 29.5 0 1 1 .2-59.1 29.5 29.5 0 0 1-.2 59zm-22-29.6a22.2 22.2 0 1 0 44.3 0 22.2 22.2 0 0 0-44.3 0z"/>
+          </svg>
+        </a>
+
+        <a href="https://gog.com/u/runab0ut/wishlist" class="icons" title="GOG wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 87">
+            <path d="M109 41c0 3-3 6-6 6H77v-8h22l2-2V11l-2-2H87l-2 2v12l2 2h10v8H83c-3 0-6-3-6-6V7c0-3 3-6 6-6h20c3 0 6 3 6 6v34zm0 45h-8V62h-5c-1 0-2 1-2 3v21h-8V62h-5c-2 0-3 1-3 3v21h-7V61c0-4 2-6 6-6h32v31zM65 33H45c-3 0-6-3-6-6V7c0-3 3-6 6-6h20c3 0 6 3 6 6v20c0 3-3 6-6 6zM61 9H49l-2 2v12l2 2h12l2-2V11l-2-2zm3 71c0 3-2 6-5 6H39c-3 0-6-3-6-6V61c0-4 3-6 6-6h20c3 0 5 2 5 6v19zm-9-18H43c-1 0-2 1-2 3v11l2 2h12l2-2V65c0-2-1-3-2-3zM33 41c0 3-3 6-6 6H1v-8h22l2-2V11l-2-2H11l-2 2v12l2 2h9v8H7c-4 0-6-3-6-6V7c0-3 2-6 6-6h20c3 0 6 3 6 6v34zm-6 21H11c-2 0-3 1-3 3v11c0 1 1 2 3 2h16v8H7c-4 0-6-3-6-6V61c0-4 2-6 6-6h20v7z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCZ3L0C_zhRyoSCRsygGj23w" class="icons" title="YouTube videos">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path d="M549.7 124a68.6 68.6 0 0 0-48.3-48.5C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 25-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3a67.6 67.6 0 0 0 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5a67.6 67.6 0 0 0 48.3-47.8C561 345.8 561 256.4 561 256.4s0-89.5-11.4-132.3zM232 337.7V175.2L375 256.4 232 337.6z"/>
+          </svg>
+        </a>
+      </div></div>
+  </div>
+  <div class="sidebar">
     <div class="recent">
+      <h3 class="green">Recent</h3>
       <p><a href="https://lifecounterapp.netlify.com">MTG Life Counter</a> - Simple life counter app made in Vue.js.</p>
-      <p><a href="https://pocketdm.netlify.com">PocketDM</a> - Web app that offers generator and custom rules for the Dungeons &amp; Dragons Adventure System board game made with Vue.js.</p>
+      <p><a href="https://pocketdm.netlify.com">PocketDM</a> - Generator, tools and custom rules for the Dungeons &amp; Dragons Adventure System board game made with Vue.js.</p>
       <p><a href="https://www.pixelpush.io/durbee">Durbee</a> - A small excercise app using Vue.js using Darebee foundation workouts.</p>
       <p><a href="https://elintseeker.github.io/re2-remake-checklist/">RE2 Remake Checklist</a> - A Javascript/PWA enabled checklist for the Resident Evil 2 game.</p>
     </div>
-
-
-    <div class="lildiv somethingtosee">
-      <h3 class="green">Something to see</h3>
-
-      <a href="https://dribbble.com/kevinn" class="icons" title="dribbbling...">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.3 82 47.8 132a495 495 0 0 0-147.5-6.9c-5.7-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zm-23.6-24.5c-3.8 5.4-35.7 48.3-111 76.5a1130.7 1130.7 0 0 0-79-124c67.1-16.2 138 1.3 190 47.5zM166 64.6c5.6 7.7 43.5 60.1 78.6 122.5-99.1 26.3-186.4 26-195.9 25.8A212.6 212.6 0 0 1 166 64.6zM44.2 256.3v-6.5c9.3.2 112 1.6 217.8-30.1 6 11.9 11.8 24 17.2 36C202.6 277.2 133 339.2 98.6 398a211 211 0 0 1-54.4-141.7zM126 423.4c22.1-45.2 82.2-103.6 167.6-132.7 29.7 77.3 42 142 45.1 160.6-68 29-150 21-212.7-27.9zm248.4 8.5a914.3 914.3 0 0 0-41.2-151 311 311 0 0 1 132 9 212.2 212.2 0 0 1-90.8 142z"/>
-        </svg>
-      </a>
-
-      <a href="https://www.dropbox.com/sh/nv2zcs0burtrk27/AABJDoXWrNPYRkbPSoJbKXIMa" class="icons" title="Recent and not-so recent stuff, unposted...">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 512">
-          <path d="M264.4 116.3l-132 84.3 132 84.3-132 84.3L0 284.1l132.3-84.3L0 116.3 132.3 32l132.1 84.3zM131.6 395.7l132-84.3 132 84.3-132 84.3-132-84.3zm132.8-111.6l132-84.3-132-83.6L395.7 32 528 116.3l-132.3 84.3L528 284.8l-132.3 84.3-131.3-85z"/>
-        </svg>
-      </a>
-
-      <a href="https://codepen.io/kevinn/" class="icons" title="Codepen snippets and experiments">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-          <path d="M60 0a60 60 0 1 0 .2 120.1A60 60 0 0 0 60 0zm0 110.2a50.2 50.2 0 1 1 .3-100.5 50.2 50.2 0 0 1-.3 100.5z" class="outer-ring"/>
-          <path d="M97.1 48.3v-.1-.3-.1l-.2-.3v-.1l-.1-.2-.1-.2a2.9 2.9 0 0 0-.4-.5l-.2-.1-.1-.2h-.2V46l-34-22.6c-1-.7-2.5-.7-3.5 0l-34 22.6-.2.1-.1.2-.2.1-.1.2a3 3 0 0 0-.3.3v.1l-.2.2v.2l-.1.2v.2l-.1.2v24l.1.2.1.2.1.2.1.2h.1l.1.3.1.1.2.2.1.1.2.2h.1l.1.1 33.9 22.7a3.3 3.3 0 0 0 3.5 0l34-22.6.2-.1.2-.2v-.1a2.9 2.9 0 0 0 .5-.5v-.2l.2-.2v-.1l.1-.3.1-.1v-.3-.1l.1-.4V48.7l-.1-.4zM63.2 32.1l25 16.6-11.1 7.5L63.2 47V32zM57 32V47L43 56.2 32 48.7l25-16.6zM29.3 54.7l8 5.3-8 5.4V54.7zM56.9 88l-25-16.6L43 63.9 57 73.2V88zM60 67.6L48.8 60 60 52.5 71.3 60 60 67.6zM63.2 88V73.1L77.1 64l11.1 7.5-25 16.6zm27.6-22.6l-8-5.4 8-5.3v10.7z" class="inner-box"/>
-        </svg>
-      </a>
-
-      <a href="https://github.com/kevinn/" class="icons" title="Github profile">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-github fa-w-16 fa-7x" data-icon="github" data-prefix="fab" viewBox="0 0 496 512">
-          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252a250.7 250.7 0 0 0 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9a94.5 94.5 0 0 1 2.6-67.9c20.9-6.5 69 27 69 27a235 235 0 0 1 125.6 0s48.1-33.6 69-27a94.4 94.4 0 0 1 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-        </svg>
-      </a>
-    </div>
-
-
-    <div class="lildiv getintouch">
-      <h3 class="green">Get in touch</h3>
-
-      <script type="text/javascript">
-      //<![CDATA[
-      <!--
-      var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-      "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-      " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
-      "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-      "\"(6),4\\\"\\\\7{01\\\\\\\\05\\\\04\\\\02\\\\\\\\36\\\\05\\\\00\\\\\\\\30\\" +
-      "\\0e\\\\TPZC3@02\\\\\\\\\\\\\\\\\\\\\\\\0X02\\\\\\\\K[6j01\\\\\\\\7w02\\\\\\"+
-      "\\DLOS4Q00\\\\\\\\01\\\\0~\\\\NR}p>t'Gkjzv4vN1y~f!y~f{~mrm3@02\\\\\\\\22\\\\"+
-      "07\\\\01\\\\\\\\22\\\\06\\\\03\\\\\\\\6I03\\\\\\\\33\\\\01\\\\00\\\\\\\\02\\"+
-      "\\00\\\\01\\\\\\\\\\\\nG\\\\\\\\?\\\\\\\\9\\\\)8w1o4gs'#3,1,1602\\\\\\\\UI\\"+
-      "\\\\\\\\\\\\\\@Z^P\\\\K(\\\"}fo;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomf" +
-      "rg.intr=So+7;12%=;y++)y46i<f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\" +
-      "o=i,r va){,y(x fontincfu)\\\"\")"                                            ;
-      while(x=eval(x));
-      //-->
-      //]]>
-      </script>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path d="M502.3 190.8a6 6 0 0 1 9.7 4.7V400a48 48 0 0 1-48 48H48a48 48 0 0 1-48-48V195.6a6 6 0 0 1 9.7-4.7c22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7A24 24 0 0 0 512 131v-19a48 48 0 0 0-48-48H48a48 48 0 0 0-48 48v19a24 24 0 0 0 9.2 18.9c30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
-        </svg>
-      </a>
-
-      <a href="https://www.linkedin.com/in/kevinnavia/" class="icons" title="My LinkedIn Profile">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M100 448H7V149h93v299zM54 108C24 108 0 84 0 54S24 0 54 0s54 24 54 54-25 54-54 54zm394 340h-93V302c0-34 0-79-48-79s-56 38-56 77v148h-92V149h89v41h1c12-24 43-49 88-49 94 0 111 62 111 143v164z"/>
-        </svg>
-      </a>
-
-      <a href="http://twitter.com/kevinn" class="icons" title="Say hello on Twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path d="M469 117l-30 10c11-11 20-25 25-40 1-4-4-8-8-6a175 175 0 0 1-49 20c-3 0-6-1-8-3a95 95 0 0 0-93-19 92 92 0 0 0-62 66c-3 12-3 23-2 35l-1 2a4 4 0 0 1-3 2c-67-7-128-39-171-92-2-2-6-2-8 1a95 95 0 0 0 16 115c-8-2-15-4-22-8-3-2-7 0-7 4-1 38 22 72 55 88a91 91 0 0 1-18-2c-4-1-7 3-6 6 11 34 40 59 75 65-29 20-62 30-98 30H43c-3 0-6 2-7 5 0 3 1 7 4 9a264 264 0 0 0 242 12 269 269 0 0 0 149-237v-2c0-5 2-10 6-13 15-12 28-25 38-41 3-4-2-9-6-7z"/>
-        </svg>
-      </a>
-    </div>
-
-    <div class="lildiv play">
-
-      <h3 class="green">Play</h3>
-
-      <a href="https://my.playstation.com/mortari0nactual" class="icons" title="My PSN profile">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 154.8">
-          <path d="M197.2 118a37 37 0 0 1-13.3 8.3l-70.5 25.3V133l51.9-18.5c5.9-2.1 6.8-5.1 2-6.7a35 35 0 0 0-19.3 1L113.4 121v-19.4l2-.7s10-3.5 24-5c14-1.6 31.3.2 44.8 5.3 15.2 4.8 16.9 11.9 13 16.8zm-77-31.8V38.4c0-5.6-1.1-10.8-6.4-12.2-4-1.3-6.5 2.4-6.5 8v119.6L75 143.6V1c13.8 2.5 33.7 8.6 44.5 12.2 27.3 9.4 36.5 21 36.5 47.3 0 25.7-15.8 35.4-35.9 25.7zM15.8 131C.2 126.6-2.4 117.5 4.8 112.2a76.5 76.5 0 0 1 17.7-8.6l46.3-16.4v18.7l-33.3 12c-5.9 2-6.8 5-2 6.6a35 35 0 0 0 19.3-1l16-5.8v16.8l-3.2.5c-16 2.6-33 1.5-49.7-4zm171 7.4c2 0 4 .8 5.4 2.3a7.5 7.5 0 0 1 0 10.6 7.5 7.5 0 0 1-10.7 0 7.6 7.6 0 0 1 5.3-12.9zm-6.2 7.6a6.2 6.2 0 0 0 6.3 6.3 6.3 6.3 0 1 0-6.3-6.3zm8.5-4c.9.3 1.3 1 1.3 2 0 .5-.1 1-.4 1.3l-.6.6.5.4c.2.2.3.6.3 1.1v1l.1.7c0 .2.2.3.3.4v.5h-1.6l-.1-.4v-.6l-.1-1.4c0-.4-.2-.7-.5-.9l-1-.1h-2.2v3.4h-1.5v-8.4h4c.6 0 1.1.1 1.5.3zm-4 3.3h2.3c.5 0 .9 0 1.1-.3.3-.1.4-.5.4-1 0-.4-.2-.8-.5-1h-3.3v2.3z" class="cls-2"/>
-        </svg>
-      </a>
-
-      <a href="https://steamcommunity.com/id/deim0s/" class="icons" title="Steam profile">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233 233">
-          <path d="M.3 108.8A116.5 116.5 0 1 1 5 150.5l44.1 18.2a32.3 32.3 0 0 0 63.9-8l40.8-29h1a44.3 44.3 0 1 0-44.3-43.8L82 129.3a32 32 0 0 0-19.1 5.3L.3 108.8zm103.4 62.4a25 25 0 0 1-45.5 1.3l14.4 6a18.3 18.3 0 1 0 14.2-34l-15-6.2a24.8 24.8 0 0 1 31.9 13.8c2.5 6.2 2.5 13 0 19.1zm51-54.3a29.5 29.5 0 1 1 .2-59.1 29.5 29.5 0 0 1-.2 59zm-22-29.6a22.2 22.2 0 1 0 44.3 0 22.2 22.2 0 0 0-44.3 0z"/>
-        </svg>
-      </a>
-
-      <a href="https://gog.com/u/runab0ut/wishlist" class="icons" title="GOG wishlist">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 87">
-          <path d="M109 41c0 3-3 6-6 6H77v-8h22l2-2V11l-2-2H87l-2 2v12l2 2h10v8H83c-3 0-6-3-6-6V7c0-3 3-6 6-6h20c3 0 6 3 6 6v34zm0 45h-8V62h-5c-1 0-2 1-2 3v21h-8V62h-5c-2 0-3 1-3 3v21h-7V61c0-4 2-6 6-6h32v31zM65 33H45c-3 0-6-3-6-6V7c0-3 3-6 6-6h20c3 0 6 3 6 6v20c0 3-3 6-6 6zM61 9H49l-2 2v12l2 2h12l2-2V11l-2-2zm3 71c0 3-2 6-5 6H39c-3 0-6-3-6-6V61c0-4 3-6 6-6h20c3 0 5 2 5 6v19zm-9-18H43c-1 0-2 1-2 3v11l2 2h12l2-2V65c0-2-1-3-2-3zM33 41c0 3-3 6-6 6H1v-8h22l2-2V11l-2-2H11l-2 2v12l2 2h9v8H7c-4 0-6-3-6-6V7c0-3 2-6 6-6h20c3 0 6 3 6 6v34zm-6 21H11c-2 0-3 1-3 3v11c0 1 1 2 3 2h16v8H7c-4 0-6-3-6-6V61c0-4 2-6 6-6h20v7z"/>
-        </svg>
-      </a>
-
-      <a href="https://www.youtube.com/channel/UCZ3L0C_zhRyoSCRsygGj23w" class="icons" title="YouTube videos">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-          <path d="M549.7 124a68.6 68.6 0 0 0-48.3-48.5C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 25-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3a67.6 67.6 0 0 0 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5a67.6 67.6 0 0 0 48.3-47.8C561 345.8 561 256.4 561 256.4s0-89.5-11.4-132.3zM232 337.7V175.2L375 256.4 232 337.6z"/>
-        </svg>
-      </a>
-
-    </div>
-
   </div>
 </div>
 </body>
